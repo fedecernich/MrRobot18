@@ -1,0 +1,151 @@
+/* Al dar estilos, se le da siempre estilo desde el contenedor mas grande hacia el mas chico
+*{
+    /* Paddings, fondos y tal vez alguna fuente. Esto afecta a todos los elementos */
+    /* background-color: rgb(175, 145, 109); */
+
+body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial;
+        padding-left: 11em;/* Pixeles es absoluto, hau unaidades absolutas (cm, px, in) y
+        relativas (em, rem, %, usadas en responsive) */
+        background-image: url("/Imagenes/watercolor-abstract-background_23-2149147672.avif");
+}
+
+/* h1{
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+} */
+
+/* especificidad  */
+/* p{
+    color: rgb(255, 0, 0)!important;
+} */
+
+/* El especial #, se usa en casos especificos. Un especial no deberia repetirse, no con ese nombre */
+/* #primer-especial {
+    color:blue;
+} */
+
+/* .especial {
+    color:green;
+} */
+
+/* p{
+    color:rgb(0, 0, 0);
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-weight: bold;
+} */
+
+ul.navbar{
+    /*Las clases se usan para elementos que se repiten como en este caso*/
+    list-style-type: none;
+    position: absolute;
+    color:blueviolet;
+    padding: 0;
+    margin: 0;
+    top: 2em;
+    left: 1em;
+    width: 9em;
+}
+
+/* selectores descendientes */
+ul.navbar li {
+    background-color: lightblue;
+    margin: .5em 0em;
+    /*Con dos numeros es el numero y su antagonico. Ejemplo: Top va con Bottom, Right va con Left*/
+    padding: .3em;
+    border-right: 1em solid #000;
+}
+
+ul.navbar a {
+    text-decoration: none;
+}
+
+/* a:link{
+    color: blue;
+}
+
+a:visited{
+    color:violet;
+} */
+
+/* Selectores hijos
+h2 es hijo de div, que a su vez es hijo de .contenedor. Si se mueve algo de ahi, por ejemplo se
+crea otro div por fuera y se mueve un h2 a ese div nuevo, la "regla" de abajo ya no tendra validez  */
+
+/* .contenedor > div > h2 {
+    color: orange;
+} */
+
+/* .articulo h2 ~ span  {
+    color: red;
+} */
+
+/* dentro de un articulo buscame un h2 con hermanos adyacentes */
+.articulo h2 + span  {
+    color: red;
+}
+
+.contenedor {
+    background-color: lightblue;
+    width: 600px;
+    height: 550px;
+    /* max-width: 500px;
+    min-width: 200px; */
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px dotted black;
+}
+
+h1 {
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    color: orange;
+    font-size: 20px;
+}
+
+input:focus{
+    background-color: green;
+}
+
+/* El que tiene el class es "excluido" de la regla general */
+/* p:not(.miParrafo) {
+    color: chocolate;
+} */
+
+/* .contenedor:first-child {
+    color: greenyellow;
+} */
+
+p:first-child {
+    color: blue;
+}
+
+/* Al segundo hijo de p lo pinta de un color */
+p:nth-child(2) {
+    color: red;
+}
+
+/* Pinta los impares (tambien se usa odd en lugar de 2n+1) */
+p:nth-child(2n+1){
+    color: grey;
+}
+
+/* Pinta los pares (tambien se usa even en lugar de 2n) */
+p:nth-child(2n){
+    color: green;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../Imagenes/ico/hacker.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li>Contacto</li>                
+                <li><a href="IA/IA.html">IA</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <h1>Bienvenidos a Contacto</h1>
+    <div class ="imagen"><img src="../Imagenes/image2.jpg" width = "720" height = "400" alt="con el padre"></div> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="https://www.freelibros.net/">Free Libros</a>
+        Modi adipisci earum perspiciatis praesentium amet dolore, velit quod neque eligendi, 
+        doloribus repudiandae nisi consequatur harum sit recusandae iste repellat ullam. 
+        Facere.</p>   
+    <!-- Promedio de las imagenes 70kb (lo recomendado) -->
+    <table border = "1">        
+        <tr>
+            <th>Dia</th>
+            <th>Mes</th>
+            <th>Curso</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>Agosto</td>
+            <td>Yoga</td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td>Agosto</td>
+            <td>Codo a codo</td>
+        </tr>
+        <tr>
+            <td>Miercoles</td>
+            <td>Agosto</td>
+            <td>Fubol</td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td>Agosto</td>
+            <td>Descanso</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>Agosto</td>
+            <td>Codo a codo</td>
+        </tr>
+    </table>
+    <div id="formulario">
+        <h1>Formulario A1</h1>
+        <form action="" method="" target="_blank">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <!-- Lo que va en el for, se recomienda replicarlo en el atributo del input -->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required maxlength="30"><br><br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required maxlength="30"><br><br>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="18" max="99"><br><br>          
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento"><br><br>
+                <label for="dni">DNI</label>
+                <input type="number" name="edad" id="edad" min="1000000" max="999999999"><br><br>
+                <label for="adjunto">Adjuntar foto de frente</label>
+                <input type="file" name="adjunto" id="adjunto"><br><br>
+                <label for="email">E-Mail</label>
+                <input type="mail" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.
+                    [a-zA-Z0-9-]+)*$" placeholder="Coloque su E-Mail personal"><br><br>
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="noBinario">No Binario</option>
+                    <option value="otro" disabled>Otros</option>
+                </select><br><br>
+            </fieldset>      
+            <fieldset>
+                <legend>Características</legend>
+                <label for="estatura">Estatura</label>
+                <select name="estatura" id="estatura">
+                    <option value="bajo">Baja</option>
+                    <option value="nornal">Normal</option>
+                    <option value="alta">Alta</option>                    
+                </select><br><br>
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" id="peso" placeholder="Ingrese su peso en KG"><br><br>
+                <label for="calorOjos">Color de Ojos</label>
+                <input type="color"><br><br>
+                <label for="obs">Observaciones</label><br><br>
+                <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+            </fieldset>      
+            <fieldset>
+                <legend><b>Estudios</b></legend>
+                <input type="checkbox" name="primaria" id="primaria" checked>
+                <label for="primaria">Primaria</label>
+                <input type="checkbox" name="secundaria" id="secundaria" checked>
+                <label for="secundaria">Secundaria</label>
+                <input type="checkbox" name="superior" id="superior">
+                <label for="superior">Superior</label>             
+                <h3>Elija un solo lenguaje de programación</h3>
+                <input type="radio" name="lenguaje" value="java">
+                <label for="java">Java</label>
+                <input type="radio" name="lenguaje" value="python">
+                <label for="python">Python</label>
+                <input type="radio" name="lenguaje" value="javascript">
+                <label for="javascript">Javascript</label>
+            </fieldset><br>
+            <input type="checkbox" name="condiciones" id="condiciones"><b>Acepto los terminos y condiciones</b><br><br>
+            <button type="submit">Enviar</button><br><br>
+            <button type="reset" value="borrar">Borrar</button>
+        </form>
+    </div>
+
+    <h1>Selectores hermanos</h1>
+    <div class="contenedor">
+        <div class="articulo"> 
+            <h2>Titulo de ejemplo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates quod nesciunt! Placeat quaerat vero magni dolore natus illo rem labore odit? Nobis eaque veniam illum ea placeat nam expedita.</p>
+            <span>Esto es un span</span>
+            </div>
+            <div class="articulo">
+                <h2>Titulo de ejemplo 2</h2>
+                <span>Esto es un s-pan</span><br><br>
+                <span>Esto es un s-pan-cito</span>
+            </div>
+            <div class="articulo">
+                <h2>Titulo de ejemplo 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam deserunt vitae, et blanditiis sapiente officiis quisquam enim porro facere, dolorem aliquam dolorum provident inventore mollitia qui exercitationem adipisci asperiores!</p>
+            </div>
+            <strong>Esto es algo...</strong>
+    </div>
+</body>
+</html>
