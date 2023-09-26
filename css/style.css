@@ -7,8 +7,10 @@ body {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial;
         padding-left: 11em;/* Pixeles es absoluto, hau unaidades absolutas (cm, px, in) y
         relativas (em, rem, %, usadas en responsive) */
-        background-image: url("/Imagenes/watercolor-abstract-background_23-2149147672.avif");
-}
+        /* background-image: url("/Imagenes/watercolor-abstract-background_23-2149147672.avif"); */
+        background-color: rgb(15, 206, 232);
+    }
+
 
 /* h1{
     color: green;
